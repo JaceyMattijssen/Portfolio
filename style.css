@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+:root {
+    --backgroundcolor: #2e2e2e;
+    --backgroundcolordark: #2e2e2e;
+    --accentcolor: #EED241;
+    --accentcolor-alt: #d32323;
+    --textcolor: rgb(210, 210, 210);
+    --navtextcolor: rgb(61, 61, 61);
+    --seperation: rgb(222, 222, 222);
+}
+
+body {
+    background-color: var(--accentcolor);
+}
+
+header {
+    width: 100%;
+    background-color: var(--accentcolor);
+    height: 33.74rem;
+}
+
+main {
+    height: fit-content;
+    margin: 0 auto;
+    width: 97%;
+    border-radius: 1.5625rem;
+}
+
+.m-background {
+    height: auto;
+    margin: 0 auto;
+    margin-top: 0.3125rem;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    border-radius: 1.5625rem;
+}
+
+h1 {
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 4.6875rem;
+    left: 26.25rem;
+    color: rgb(243, 243, 243);
+    font-family: 'Sedgwick Ave Display';
+    font-style: italic;
+    font-size: 7.8125rem;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%
+}
+
+.nav-desktop {
+    height: 100px;
+    background-color: var(--accentcolor);
+    border-radius: 0.9375rem;
+}
+
+.list-desktop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    line-height: 3.125rem;
+}
+
+.seperate {
+    font-size: 2em;
+    color: var(--backgroundcolordark);
+}
+
+.nav-desktop a {
+    text-decoration: none;
+    font-family: 'rampart one';
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: var(--navtextcolor);
+    font-size: 2.3em;
+}
+
+.item-desktop:hover {
+    font-size: 1.2em;
+    opacity: 50%;
+    font-style: italic;
+}
+
+.projects {
+    margin: 0 auto;
+    width: 68%;
+    height: 100%;
+    padding-bottom: 6.25rem;
+}
+
+.gallery {
+    margin: 0 auto;
+    margin-top: 3.125rem;
+    height: 100%;
+}
+
+.gal-item {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    max-width: 29rem;
+    background-color: white;
+    border: solid 0.3125rem white;
+    border-radius: 25px;
+}
+
+.gal-item:hover {
+    opacity: 75%;
+    border: solid 0.3125rem yellow;
+}
+
+.about-me {
+    margin: 0 auto;
+    border-radius: 0.625rem;
+    height: fit-content;
+    width: 99%;
+}
+
+.aboutflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.25rem;
+}
+
+.about-text {
+    margin: 0.9375rem;
+    width: 31.25rem;
+    height: 31.25rem;
+}
+
+.about-image {
+    margin-top: 3.125rem;
+    width: 31.25rem;
+    height: 37.5rem;
+    background-color: rgb(36, 36, 36);
+    background-image: url(pexels-luis-gomes-166706-546819.jpg);
+    background-size: cover;
+    border: solid 0.3125rem rgb(46, 46, 46);
+    border-radius: 25px;
+}
+
+p {
+    color: var(--textcolor);
+    font-family: 'bangers';
+    margin: 0.3125rem;
+}
+
+h2, h3 {
+    color: #e4e4e4;
+    margin: 0.625rem;
+    font-family: 'rampart one';
+    font-size: 2em;
+ }
+
+footer {
+    height: 12.5rem;
+    background-color: var(--accentcolor);
+    text-align: center;
+}
+
+.contact {
+    margin: 0 auto;
+}
+
+.options {
+    justify-content: space-around;
+    display: flex;
+}
+
+.option {
+    background-color: rgb(36, 36, 36);
+    background-image: url(background.png);
+    background-size: contain;
+    padding: 3.125rem;
+    margin: 1.5rem;
+    width: 100%;
+    border: solid 0.3125rem rgb(36, 36, 36);
+    border-radius: 5px;
+}
+
+.option:hover {
+    opacity: 75%;
+    border: solid 0.3125rem white;
+}
+
+.c-kop {
+    font-family: 'rampart one';
+    font-size: 2em;
+}
+
+.c-text {
+    font-weight: 31.25rem;
+}
+
+.v-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grey-star {
+    color: white;
+}
+
+.stars {
+    color: yellow;
+}
+
+.nav-mobile {
+    background-color: var(--accentcolor);
+    padding: 15px;
+    z-index: 100;
+    position: fixed;
+    bottom: 3vw;
+    left: 92vw;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin: 0 auto;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.list-mobile {
+    display: block;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--backgroundcolordark);
+}
+
+.item-mobile {
+    color: var(--backgroundcolordark);
+}
+
+@media screen and (max-width: 760px) {
+    .nav-desktop {
+      display: none;
+    }
+  }
