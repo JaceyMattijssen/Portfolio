@@ -237,7 +237,7 @@ footer {
     margin: 0 auto;
     font-size: 2rem;
     border-radius: 10px;
-    border: 2px black;
+    border: 2px solid black;
 }
 
 .list-mobile {
@@ -260,3 +260,4 @@ a {
     }
 
   }
+
