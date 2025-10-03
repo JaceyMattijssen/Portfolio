@@ -240,6 +240,10 @@ footer {
     border: 2px solid black;
 }
 
+.mn-p {
+    color: black;
+}
+
 .list-mobile {
     display: block;
     list-style: none;
@@ -260,4 +264,5 @@ a {
     }
 
   }
+
 
